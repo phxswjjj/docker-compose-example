@@ -1,0 +1,23 @@
+建立 nginx 目錄，設定會統一放在這目錄下
+```shell=
+mkdir nginx
+cd nginx
+```
+
+建立相關目錄
+```shell=
+mkdir html
+mkdir conf
+mkdir log
+
+touch docker-compose.yaml
+touch conf/nginx.conf
+```
+
+新增檔案內容參考：
+- [docker-compose.yaml](docker-compose.yaml)
+- [conf/nginx.conf](conf/nginx.conf)
+
+```shell=
+docker compose up -d
+```
