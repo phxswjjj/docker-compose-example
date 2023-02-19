@@ -11,11 +11,13 @@ mkdir log
 
 touch docker-compose.yml
 touch conf/nginx.conf
+touch conf/other-pattern.conf
 ```
 
 新增檔案內容參考：
 - [docker-compose.yaml](docker-compose.yaml)
 - [conf/nginx.conf](conf/nginx.conf)
+- [conf/other-pattern.conf](conf/other-pattern.conf)
 
 安裝並啟動服務
 ```shell=
