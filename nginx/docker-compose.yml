@@ -1,13 +1,15 @@
 version: '3'
 services:
   nginx:
-    container_name: nginx
-    image: nginx
+    container_name: my-nginx
+    image: nginx:latest
     ports:
+      # local:container
       - "80:80"
       - "443:443"
     volumes:
-      - ./html:/usr/share/nginx/html
+      # local:container
       - ./conf:/etc/nginx
+      - ./ssl:/etc/ssl/nginx
       - ./log:/var/log/nginx
     restart: always

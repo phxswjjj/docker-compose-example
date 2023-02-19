@@ -6,11 +6,10 @@ cd nginx
 
 建立相關目錄
 ```shell=
-mkdir html
 mkdir conf
 mkdir log
 
-touch docker-compose.yaml
+touch docker-compose.yml
 touch conf/nginx.conf
 ```
 
@@ -33,4 +32,9 @@ docker compose down
 docker compose start
 docker compose stop
 docker compose restart
+```
+
+nginx config reload
+```shell=
+docker exec my-nginx nginx -s reload
 ```
