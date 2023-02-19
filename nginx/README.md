@@ -34,6 +34,8 @@ docker compose stop
 docker compose restart
 ```
 
+[nginx config example](https://www.nginx.com/resources/wiki/start/)
+
 nginx config reload
 ```shell=
 docker exec my-nginx nginx -s reload
