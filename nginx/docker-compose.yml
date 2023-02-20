@@ -3,6 +3,8 @@ services:
   nginx:
     container_name: my-nginx
     image: nginx:latest
+    environment:
+      - TZ=Asia/Taipei
     ports:
       # local:container
       - "80:80"
