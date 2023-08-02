@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  rabbitmq:
+    # 自訂義名稱
+    container_name: rabbitmq
+    # 包含管理介面
+    image: rabbitmq:management
+    ports:
+      # MQ
+      - "5672:5672"
+      # 管理介面
+      - "15672:15672"
+    volumes:
+      - ./data:/data
+    environment:
+      - RABBITMQ_DEFAULT_VHOST=/
+      - RABBITMQ_DEFAULT_USER=your_account
+      - RABBITMQ_DEFAULT_PASS=your_password
+      - RABBITMQ_ERLANG_COOKIE=rabbitmq
+    restart: always
