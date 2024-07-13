@@ -12,7 +12,7 @@ touch docker-compose.yaml
 ```
 
 新增檔案內容參考：
-- [docker-compose.yaml](docker-compose.yaml)
+- [docker-compose.yml](docker-compose.yml)
 
 安裝並啟動服務
 ```shell=
