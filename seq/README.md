@@ -8,7 +8,7 @@ cd seq
 ```shell=
 mkdir data
 
-touch docker-compose.yaml
+touch docker-compose.yml
 ```
 
 新增檔案內容參考：
